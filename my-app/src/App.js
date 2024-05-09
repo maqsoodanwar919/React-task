@@ -13,23 +13,12 @@ import {
   Routes,
 } from "react-router-dom";
 function App() {
-  const [count , setCount] = useState(0); 
-
-  const addValue = () => { 
-    setCount(count + 1); 
-  };
-
-  const removeVlue = () => { 
-    setCount(count - 1); 
-  };
+  
 
   return (
     <>  
 
-       {/* <Comment name="ali" age="26" />
-       <h1>Start React js {count}</h1>
-       <button onClick={addValue}>Add value</button>
-       <button onClick={removeVlue}>Add value</button> */}
+     
        <BrowserRouter> 
          <Header />
         <Routes>
