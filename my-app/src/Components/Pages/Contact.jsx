@@ -22,13 +22,13 @@ const Contact = () => {
           {/* loop map function */}
 
         <ul>
-          {posts.map((pst) => (
-            <li key={pst.id}>
+          {posts.map((pst , i) => (
+            <li key={i}>
               <div>{pst.id}</div>
               <div>{pst.name}</div>
               <div>{pst.username}</div>
               <div>{pst.email}</div> 
-              <div>{pst.address.street}</div>  
+              <div>{pst.address.street+ " " + pst.address.suite + " " + pst.address.city+ " " + pst.address.zipcode}</div>  
             </li>
           ))}
         </ul>
