@@ -1,30 +1,29 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const basUrl = "https://jsonplaceholder.typicode.com/posts/1";
+const basUrl = "https://jsonplaceholder.typicode.com/posts/";
 
 const Contact = () => {
-  const [post, setPost] = useState(null);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     axios.get(basUrl).then((result) => {
-      // console.log(result);
-      setPost(result.data);
+      setPosts(result.data);
     });
   }, []);
 
   return (
     <div>
       <div className="container">
-        {post ? (
-          <ul>
-            <li>{post.id}</li>
-            <li>{post.title}</li>
-            <li>{post.body}</li>
-          </ul>
-        ) : (
-          <p>Loading...</p>
-        )}
+        <ul>
+          {posts.map((pst) => (
+            <li key={pst.id}>
+              <div>{pst.id}</div>
+              <div>{pst.title}</div>
+              <div>{pst.body}</div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
