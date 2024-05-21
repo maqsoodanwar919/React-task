@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const basUrl = "https://jsonplaceholder.typicode.com/users";
+const basUrl = "https://jsonplaceholder.typicode.com/users/";
 
 const Contact = () => {
   const [posts, setPosts] = useState([]);
