@@ -28,7 +28,10 @@ const Contact = () => {
               <div>{pst.name}</div>
               <div>{pst.username}</div>
               <div>{pst.email}</div> 
-              <div>{pst.address.street+ " " + pst.address.suite + " " + pst.address.city+ " " + pst.address.zipcode}</div>  
+              <div>{pst.address.street+ " " + pst.address.suite + " " + pst.address.city+ " " + pst.address.zipcode+ " " + pst.address.geo.lat+ " " + pst.address.geo.lng}</div> 
+              <div>{pst.phone}</div>  
+              <div>{pst.website}</div>
+              <div>{pst.company.name+ " " + pst.company.catchPhrase+ " " + pst.company.bs}</div>  
             </li>
           ))}
         </ul>
