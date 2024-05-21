@@ -58,7 +58,8 @@ const Home = () => {
     <>
       <div className="container">
         <div className='row'> 
-            {itmes.map((num , i) => (
+           {
+              itmes.map((num, i) => (
               <div className='col-xl-4' key={i}>
                 <div className='card'>
                   <img src={num.image} className='card-img-top' alt={num.name} />
@@ -68,7 +69,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            ))} 
+            ))
+           }
         </div>
       </div>
     </>
