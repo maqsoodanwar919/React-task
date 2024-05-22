@@ -9,8 +9,10 @@ const Contact = () => {
   useEffect(() => {
     axios.get(basUrl).then((result) => {
       setPosts(result.data);
+    }).catch((error)=>{
+      console.log(error)
     });
-  }, []);
+  });
 
   return (
     <div>
@@ -19,8 +21,7 @@ const Contact = () => {
           {/* <div>{posts.id}</div>
           <div>{posts.title}</div>
           <div>{posts.body}</div> */} 
-          {/* loop map function */}
-
+          {/* loop map function */} 
         <ul>
           {posts.map((pst , i) => (
             <li key={i}>
