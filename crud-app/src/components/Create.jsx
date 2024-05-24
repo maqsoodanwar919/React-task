@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Create = () => {
@@ -11,11 +11,17 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log("Submitting form");
         axios.post("https://664e09ddfafad45dfadecd99.mockapi.io/crud", { userName, userAge, userEmail })
             .then(() => {
+                console.log("Form submitted successfully, navigating to /read");
                 navigate('/read');
+            })
+            .catch(error => {
+                console.error("There was an error submitting the form!", error);
             });
     }
+    
 
     return (
         <div className='container'>
