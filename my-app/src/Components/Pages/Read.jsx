@@ -9,7 +9,7 @@ const Read = () => {
 
   // get Api
   const getDate= (()=>{ 
-    axios.get("https://664e09ddfafad45dfadecd99.mockapi.io/crud").then((result) => {
+    axios.get("http://localhost:3000/users").then((result) => {
       setPosts(result.data);
     }).catch((error)=>{
       console.log(error)
@@ -22,7 +22,7 @@ const Read = () => {
 
   // Delete function
  const handleDelet= ((id)=>{ 
-   axios.delete(`https://664e09ddfafad45dfadecd99.mockapi.io/crud/${id}`)
+   axios.delete(`http://localhost:3000/users/${id}`)
    .then(() => {
      getDate();
   }) 

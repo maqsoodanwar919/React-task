@@ -19,7 +19,7 @@ const Create = () => {
         }
 
         console.log("Submitting form");
-        axios.post("https://664e09ddfafad45dfadecd99.mockapi.io/crud", { userName, userAge, userEmail })
+        axios.post("http://localhost:3000/users", { userName, userAge, userEmail })
         .then(() => {
             console.log("Form submitted successfully, navigating to /read");
             navigate('/read');
