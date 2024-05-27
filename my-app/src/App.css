@@ -4,3 +4,7 @@ body{
 .card{
   margin-bottom: 25px;
 }
+
+tbody, td, tfoot, th, thead, tr { 
+  vertical-align: middle;
+}

@@ -20,9 +20,7 @@ const Create = () => {
             .catch(error => {
                 console.error("There was an error submitting the form!", error);
             });
-    }
-    
-
+    }  
     return (
         <div className='container'>
             <h1 className='text-center my-4'>Create Form With React js</h1>
