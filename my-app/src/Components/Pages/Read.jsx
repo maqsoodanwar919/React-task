@@ -57,8 +57,8 @@ const Read = () => {
                 <td>{pst.userEmail}</td>
                 <td className='text-center'>
                   <div className='btn-wrap'>
-                    <button className='btn btn-outline-danger' onClick={()=> {if(window.confirm("Are you sure delete date ??")) {handleDelet(pst.id)}}}>Delet</button>
-                    <button className='btn btn-outline-success ms-3'>Edit</button>
+                    <button className='btn btn-outline-danger' onClick={()=> {if(window.confirm("Are you sure delete date ??")) {handleDelet(pst.id)}}}>Delete</button>
+                    <Link to="/edit"><button className='btn btn-outline-success ms-3'>Edit</button> </Link>
                   </div>
                 </td>
               </tr> 

@@ -8,6 +8,7 @@ import Post from './Components/Pages/Post';
 import Create from './Components/Pages/Create'; 
 import Read from './Components/Pages/Read';
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import { Edit } from './Components/Pages/Edit';
  
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/post" element={<Post />} />
           <Route path="/create" element={<Create />} />
           <Route path="/read" element={<Read />} />
+          <Route path="/edit" element={<Edit />} />
         </Routes> 
     </BrowserRouter>
   );
