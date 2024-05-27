@@ -11,6 +11,13 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // Validation
+        if (!userName || !userAge || !userEmail) {
+            alert('Please fill in all fields');
+            return;
+        }
+
         console.log("Submitting form");
         axios.post("https://664e09ddfafad45dfadecd99.mockapi.io/crud", { userName, userAge, userEmail })
         .then(() => {
@@ -20,7 +27,8 @@ const Create = () => {
         .catch(error => {
             console.error("There was an error submitting the form!", error);
         });
-    }  
+    }
+
     return (
         <div className='container'>
             <h1 className='text-center my-4'>Create Form With React js</h1>
