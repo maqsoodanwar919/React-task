@@ -50,7 +50,7 @@ const Read = () => {
             </thead>
             <tbody>
             {posts.map((pst , i) => (
-              <tr key={i}>
+              <tr key={pst.i}>
                 <th scope="row">{pst.id}</th>
                 <td>{pst.userName}</td> 
                 <td>{pst.userAge}</td>

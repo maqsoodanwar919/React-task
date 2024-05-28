@@ -1,3 +1,40 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "4093",
+      "userName": "khan",
+      "userAge": "45",
+      "userEmail": "test@gmail.com"
+    },
+    {
+      "id": "e789",
+      "userName": "Maqsood ",
+      "userAge": "34",
+      "userEmail": "Maqsood@gmail.com"
+    },
+    {
+      "id": "9696",
+      "userName": "umar",
+      "userAge": "19",
+      "userEmail": "umar@gmail.com"
+    },
+    {
+      "id": "2c5c",
+      "userName": "maqsod anwar",
+      "userAge": "15",
+      "userEmail": "anwar@gmail.com"
+    },
+    {
+      "id": "96ae",
+      "userName": "Ali",
+      "userAge": "17",
+      "userEmail": "Ali@gmail.com"
+    },
+    {
+      "id": "e67f",
+      "userName": "TEST MAQSOOD",
+      "userAge": "45",
+      "userEmail": "test@gmail.com"
+    }
+  ]
 }

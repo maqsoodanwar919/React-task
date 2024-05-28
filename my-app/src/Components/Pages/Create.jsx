@@ -16,8 +16,7 @@ const Create = () => {
         if (!userName || !userAge || !userEmail) {
             alert('Please fill in all fields');
             return;
-        }
-
+        } 
         console.log("Submitting form");
         axios.post("http://localhost:3000/users", { userName, userAge, userEmail })
         .then(() => {
@@ -34,9 +33,9 @@ const Create = () => {
             <h1 className='text-center my-4'>Create Form With React js</h1>
             <div className='row'>
                 <div className='col-lg-8 me-auto ms-auto'>
-                <Link to="/read">
-                    <button className='btn btn-primary my-4'>Read Data</button>
-                </Link>
+                    <Link to="/read">
+                        <button className='btn btn-primary my-4'>Read Data</button>
+                    </Link>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group mb-3">
                             <label className="form-label">Enter name</label>
