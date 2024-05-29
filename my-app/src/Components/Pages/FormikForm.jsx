@@ -4,7 +4,8 @@ import React from 'react'
 const FormikForm = () => {
     const formInitialValues = {
         name: '',
-        email: ''
+        email: '',
+        password:''
     }
 
     const {handleSubmit, handleChange, values } = useFormik({
@@ -40,6 +41,17 @@ const FormikForm = () => {
                             name='email'
                             onChange={handleChange}
                             value={values.email}
+                        />
+                    </div>
+                    <div className="form-group mb-3">
+                        <label className="form-label">Enter Email</label>
+                        <input
+                            type="password"
+                            className="form-control"
+                            placeholder='Please enter password'
+                            name='password'
+                            onChange={handleChange}
+                            value={values.password}
                         />
                     </div>
                     <div className="form-group">
