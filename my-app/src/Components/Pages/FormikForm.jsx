@@ -44,7 +44,7 @@ const FormikForm = () => {
                         />
                     </div>
                     <div className="form-group mb-3">
-                        <label className="form-label">Enter Email</label>
+                        <label className="form-label">Enter Password</label>
                         <input
                             type="password"
                             className="form-control"
