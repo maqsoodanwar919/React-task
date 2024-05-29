@@ -22,7 +22,7 @@ const FormikForm = () => {
                 <h1 className='text-center my-4'>Create Form With Formik Form React js</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group mb-3">
-                        <label className="form-label">Enter name</label>
+                        <label className="form-label">Enter Name</label>
                         <input
                             type="text"
                             className="form-control"
@@ -53,10 +53,11 @@ const FormikForm = () => {
                             onChange={handleChange}
                             value={values.password}
                         />
-                    </div>
+                    </div>  
                     <div className="form-group">
                         <input type='submit' className="btn btn-primary" value='Submit form' />
-                    </div>
+                    </div> 
+                    {/* {formInitialValues} */}
                 </form>
             </div>
         </>
