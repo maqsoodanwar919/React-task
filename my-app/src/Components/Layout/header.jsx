@@ -35,6 +35,9 @@ const header = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/event" >Handling Events</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/formik" >Formik Form</Link>
+              </li>
             </ul> 
           </div>
         </div>

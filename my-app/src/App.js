@@ -8,6 +8,7 @@ import Post from './Components/Pages/Post';
 import Create from './Components/Pages/Create'; 
 import Read from './Components/Pages/Read';
 import Events from './Components/Pages/Events';
+import FormikForm from './Components/Pages/FormikForm';
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import { Edit } from './Components/Pages/Edit';
  
@@ -24,6 +25,7 @@ function App() {
           <Route path="/read" element={<Read />} />
           <Route path="/edit" element={<Edit />} />
           <Route path="/event" element={<Events />} />
+          <Route path="/formik" element={<FormikForm />} />
         </Routes> 
     </BrowserRouter>
   );
