@@ -31,7 +31,7 @@ export const Edit = () => {
 
     return (
         <div className='container'>
-        <h1 className='text-center my-4'>Edit User</h1>
+        <h1 className='text-center my-4'>Edit {userName}</h1>
         <div className='row'>
             <div className='col-lg-12 me-auto ms-auto'>
                 <Link to="/read">
