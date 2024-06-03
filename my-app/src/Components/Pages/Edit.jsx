@@ -6,7 +6,7 @@ export const Edit = () => {
     <div className='container'>
     <h1 className='text-center my-4'>Create Form With React js</h1>
     <div className='row'>
-        <div className='col-lg-8 me-auto ms-auto'>
+        <div className='col-lg-12 me-auto ms-auto'>
         <Link to="/read">
             <button className='btn btn-primary my-4'>Read Data</button>
         </Link>
